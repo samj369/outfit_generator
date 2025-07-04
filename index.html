@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Outfit Generator !</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <h1> Outfit Generator</h1>
+
+
+ <div class="upload-section">
+   <label for="imageInput">Upload Clothing Image:</label>
+   <input type="file" id="imageInput" accept="image/*" />
+  
+   <label for="categorySelect">Category:</label>
+   <select id="categorySelect">
+     <option value="top">Top</option>
+     <option value="bottom">Bottom</option>
+     <option value="shoes">Dresses</option>
+     <option value="shoes">Outerwear</option>
+     <option value="shoes">Shoes</option>
+     <option value="shoes">Hat</option>
+     <option value="shoes">Bag</option>
+   </select>
+
+   <button id="addButton">Add to Wardrobe</button>
+ </div>
+
+
+ <h2>My Wardrobe</h2>
+ <div id="closet"></div>
+
+
+ <h2>My Outfit</h2>
+ <button id="generateButton">Dress Me!</button>
+ <div id="outfitDisplay"></div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,101 @@
+body {
+ font-family: 'Georgia', serif;
+ color: #E55050;
+ text-align: center;
+ padding: 20px;
+ background-color: #B2C6D5;
+ background-image: repeating-linear-gradient(
+   45deg,
+   rgba(255,255,255,0.1) 0px,
+   rgba(255,255,255,0.1) 12px,
+   transparent 10px,
+   transparent 20px
+ );
+ background-size: 200% 200%; 
+ background-attachment: fixed; /* makes gradient consistent for whole page */
+}
+
+
+h1 {
+ color: #732255;
+ text-shadow: 2px 2px 0px #fff, 4px 4px 0px rgba(0,0,0,0.1);
+ font-size: 2.5rem;
+ letter-spacing: 1px;
+}
+
+
+.upload-section {
+ margin-bottom: 30px;
+ padding: 15px;
+ background-color: white;
+ border-radius: 15px;
+ box-shadow: 5px 5px 0px #71C0BB, 10px 10px 0px rgba(0,0,0,0.1);
+ display: inline-block;
+}
+
+
+button, input[type="file"] {
+ background-color: #E55050;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 50px;
+ font-family: inherit;
+ font-weight: bold;
+ color: #fff;
+ cursor: pointer;
+ box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+ transition: all 0.3s ease;
+}
+
+
+button:hover, input[type="file"]:hover {
+ transform: translateY(-3px);
+ box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+}
+
+
+#closet, #outfitDisplay {
+ display: flex;
+ justify-content: center;
+ gap: 15px;
+ flex-wrap: wrap;
+ margin: 30px auto;
+ max-width: 800px;
+ padding: 20px;
+ background-color: rgba(255,255,255,0.7);
+ border-radius: 20px;
+ border: 3px dashed #71C0BB;
+}
+
+
+img {
+ max-width: 120px;
+ border-radius: 15px;
+ border: 3px solid white;
+ box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+ transition: transform 0.3s ease;
+ background-color: white;
+ padding: 5px;
+}
+
+
+img:hover {
+ transform: scale(1.1) rotate(5deg);
+}
+
+
+/* make it look cooler ?*/
+.crafty-corner {
+ position: fixed;
+ width: 100px;
+ height: 300px;
+ background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%23ff6b9d" d="M0,0 L100,0 L100,100 C50,50 0,100 0,0 Z"/></svg>');
+ background-size: contain;
+ opacity: 0.3;
+}
+
+
+.top-left { top: 0; left: 0; transform: rotate(0deg); }
+.top-right { top: 0; right: 0; transform: rotate(90deg); }
+.bottom-left { bottom: 0; left: 0; transform: rotate(270deg); }
+.bottom-right { bottom: 0; right: 0; transform: rotate(180deg); }
