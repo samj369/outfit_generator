@@ -1,6 +1,6 @@
 body {
  font-family: 'Georgia', serif;
- color: #E55050;
+  color: #E55050;
  text-align: center;
  padding: 20px;
  background-color: #B2C6D5;
@@ -84,7 +84,7 @@ img:hover {
 }
 
 
-/* make it look cooler ?*/
+/* make it look cooler, improve this probs*/
 .crafty-corner {
  position: fixed;
  width: 100px;
